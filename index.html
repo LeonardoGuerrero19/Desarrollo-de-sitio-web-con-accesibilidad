@@ -24,7 +24,7 @@
   </main>
 
   <footer>
-    <p>© 2025 Ángel - Proyecto de evaluación</p>
+    <p>© 2025 Leonardo - Pagina web accesible</p>
   </footer>
 
   <section id="accessibility-controls">
@@ -38,6 +38,10 @@
     <button onclick="toggleHighContrast()">Alto contraste</button>
     <button onclick="toggleImages()">Mostrar/Ocultar imágenes</button>
     <button onclick="toggleLinks()">Mostrar/Ocultar links</button>
+    <button onclick="toggleDaltonism('protanopia-simple')">Simular Protanopia</button>
+    <button onclick="toggleDaltonism('deuteranopia-simple')">Simular Deuteranopia</button>
+    <button onclick="toggleDaltonism('tritanopia-simple')">Simular Tritanopia</button>
+    <button onclick="toggleDaltonism(null)">Quitar filtro Daltonismo</button>
   </section>
 
   <script src="js/accessibility.js"></script>

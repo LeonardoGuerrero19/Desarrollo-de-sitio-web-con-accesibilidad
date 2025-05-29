@@ -131,3 +131,29 @@ body.hide-images img {
 body.custom-cursor {
   cursor: crosshair;
 }
+
+/* Filtros para simulación de daltonismo */
+body.protanopia {
+  filter: url('#protanopia');
+}
+
+body.deuteranopia {
+  filter: url('#deuteranopia');
+}
+
+body.tritanopia {
+  filter: url('#tritanopia');
+}
+
+/* Alternativa simple con filtros CSS para pruebas */
+body.protanopia-simple {
+  filter: grayscale(50%) sepia(20%) hue-rotate(-20deg);
+}
+
+body.deuteranopia-simple {
+  filter: grayscale(50%) sepia(40%) hue-rotate(10deg);
+}
+
+body.tritanopia-simple {
+  filter: grayscale(60%) sepia(50%) hue-rotate(90deg);
+}

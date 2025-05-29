@@ -4,15 +4,17 @@ let linksHidden = false;
 
 function increaseFont() {
   if (zoomLevel < 3) {
-    zoomLevel += 0.5;
-    document.body.style.fontSize = zoomLevel + "em";
+    zoomLevel += 0.1;
+    zoomLevel = Math.min(zoomLevel, 3);
+    document.body.style.fontSize = zoomLevel.toFixed(2) + "em";
   }
 }
 
 function decreaseFont() {
-  if (zoomLevel > 0.5) {
-    zoomLevel -= 0.5;
-    document.body.style.fontSize = zoomLevel + "em";
+  if (zoomLevel > 0.33) {
+    zoomLevel -= 0.1;  // salto más pequeño para más control
+    zoomLevel = Math.max(zoomLevel, 0.33); // no bajar más
+    document.body.style.fontSize = zoomLevel.toFixed(2) + "em";
   }
 }
 
@@ -49,5 +51,14 @@ function toggleLinks() {
     document.body.classList.add("hide-links");
   } else {
     document.body.classList.remove("hide-links");
+  }
+}
+
+function toggleDaltonism(type) {
+  document.body.classList.remove('protanopia', 'deuteranopia', 'tritanopia',
+                              'protanopia-simple', 'deuteranopia-simple', 'tritanopia-simple');
+  if (type) {
+    // Puedes usar versiones simples o con filtros SVG si los agregas
+    document.body.classList.add(type);
   }
 }
