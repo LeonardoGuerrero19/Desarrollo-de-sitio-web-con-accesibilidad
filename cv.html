@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mi CV</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="font-default">
+  <nav>
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="info.html">Información</a></li>
+      <li><a href="cv.html">Mi CV</a></li>
+      <li><a href="contact.html">Contacto</a></li>
+      <li><a href="otra.html">Otra Página</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1>Currículum Vitae - Ángel</h1>
+    <section>
+      <h2>Datos personales</h2>
+      <p>Nombre: Ángel [Tu Apellido]</p>
+      <p>Email: angel@ejemplo.com</p>
+      <p>Teléfono: 55-5555-5555</p>
+    </section>
+
+    <section>
+      <h2>Formación académica</h2>
+      <ul>
+        <li>Licenciatura en [Tu Carrera] - Universidad XYZ (2020-2024)</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Experiencia</h2>
+      <ul>
+        <li>Prácticas profesionales en empresa ABC - Desarrollo web (2023)</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Ángel - Proyecto de evaluación</p>
+  </footer>
+
+  <section id="accessibility-controls">
+    <button onclick="increaseFont()">Aumentar fuente</button>
+    <button onclick="decreaseFont()">Disminuir fuente</button>
+    <button onclick="resetFont()">Restablecer fuente</button>
+    <button onclick="changeFont('font-default')">Fuente Arial</button>
+    <button onclick="changeFont('font-serif')">Fuente Serif</button>
+    <button onclick="changeFont('font-mono')">Fuente Monoespaciada</button>
+    <button onclick="toggleDarkMode()">Modo oscuro</button>
+    <button onclick="toggleHighContrast()">Alto contraste</button>
+    <button onclick="toggleImages()">Mostrar/Ocultar imágenes</button>
+    <button onclick="toggleLinks()">Mostrar/Ocultar links</button>
+  </section>
+
+  <script src="js/accessibility.js"></script>
+</body>
+</html>

@@ -1,0 +1,133 @@
+/* Estilos básicos */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 1em;
+  margin: 0;
+  padding: 0 15px;
+  background-color: white;
+  color: black;
+}
+
+.font-serif {
+  font-family: "Times New Roman", serif;
+}
+
+.font-mono {
+  font-family: "Courier New", monospace;
+}
+
+nav {
+  background-color: #004080;
+  padding: 10px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+h1, h2 {
+  margin-top: 20px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  margin: 10px 0;
+}
+
+footer {
+  margin-top: 40px;
+  padding: 15px 0;
+  text-align: center;
+  border-top: 1px solid #ccc;
+  font-size: 0.9em;
+  color: #666;
+}
+
+#accessibility-controls {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  background: #eee;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px #999;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  z-index: 1000;
+}
+
+#accessibility-controls button {
+  background-color: #004080;
+  border: none;
+  color: white;
+  padding: 5px 8px;
+  font-size: 0.85em;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+#accessibility-controls button:hover {
+  background-color: #0073e6;
+}
+
+/* Modo oscuro */
+body.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+body.dark-mode nav {
+  background-color: #222;
+}
+
+body.dark-mode #accessibility-controls {
+  background-color: #333;
+}
+
+/* Alto contraste */
+body.high-contrast {
+  background-color: black !important;
+  color: yellow !important;
+}
+
+body.high-contrast nav {
+  background-color: black !important;
+}
+
+body.high-contrast #accessibility-controls {
+  background-color: black !important;
+}
+
+/* Links ocultos */
+body.hide-links a {
+  pointer-events: none;
+  color: black !important;
+  text-decoration: none !important;
+}
+
+/* Imágenes ocultas */
+body.hide-images img {
+  display: none !important;
+}
+
+/* Cursor personalizado */
+body.custom-cursor {
+  cursor: crosshair;
+}
